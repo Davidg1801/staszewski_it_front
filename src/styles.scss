@@ -5,6 +5,13 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
+*,
+*::before *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   @include mat.theme(
     (
@@ -32,5 +39,4 @@ body {
   font: var(--mat-sys-body-medium);
 
   // Reset the user agent margin.
-  margin: 0;
 }
